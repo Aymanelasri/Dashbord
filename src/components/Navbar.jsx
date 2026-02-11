@@ -38,12 +38,7 @@ function Navbar({ toggleDarkMode, darkMode, setSidebarOpen }) {
     };
   }, [user]);
 
-  const handleLogout = () => {
-    localStorage.removeItem('token');
-    localStorage.removeItem('user');
-    localStorage.removeItem('auth_token');
-    window.location.href = 'http://localhost:3000/login';
-  };
+  
 
   return (
     <nav className={`navbar navbar-expand-lg border-bottom ${darkMode ? 'bg-dark border-secondary' : 'bg-white border-light'}`} style={{boxShadow: '0 1px 3px rgba(0, 0, 0, 0.05)'}}>
@@ -139,7 +134,7 @@ function Navbar({ toggleDarkMode, darkMode, setSidebarOpen }) {
                   📊 Historique d'activité
                 </a>
                 <div className="dropdown-divider"></div>
-                <a className={`dropdown-item text-danger`} href="#logout" onClick={(e) => { e.preventDefault(); handleLogout(); }}>
+                <a className={`dropdown-item text-danger`} href="#logout" >
                   🚪 Déconnexion
                 </a>
               </div>
