@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { 
-  BarChart, Bar, LineChart, Line, PieChart, Pie, Cell, AreaChart, Area,
-  XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend 
+  BarChart, Bar, PieChart, Pie, Cell, AreaChart, Area,
+  XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer
 } from 'recharts';
 import { 
   UserGroupIcon, CurrencyDollarIcon, ShoppingBagIcon, ClockIcon,

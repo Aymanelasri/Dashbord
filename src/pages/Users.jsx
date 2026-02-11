@@ -4,10 +4,8 @@ import dataService from '../services/dataService';
 
 function Users() {
   const [users, setUsers] = useState([]);
-  const [loading, setLoading] = useState(false);
   const [searchTerm, setSearchTerm] = useState('');
   const [filterRole, setFilterRole] = useState('');
-  const [filterStatus, setFilterStatus] = useState('');
   const [showViewModal, setShowViewModal] = useState(false);
   const [showEditModal, setShowEditModal] = useState(false);
   const [showAddModal, setShowAddModal] = useState(false);

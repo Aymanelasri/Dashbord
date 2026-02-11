@@ -4,7 +4,6 @@ import dataService from '../services/dataService';
 
 function Products() {
   const [products, setProducts] = useState([]);
-  const [loading] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const [editingProduct, setEditingProduct] = useState(null);
   const [formData, setFormData] = useState({

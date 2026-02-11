@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ChatBubbleLeftIcon, PaperAirplaneIcon } from '@heroicons/react/24/outline';
+import { PaperAirplaneIcon } from '@heroicons/react/24/outline';
 import dataService from '../services/dataService';
 
 function Messages() {

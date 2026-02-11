@@ -7,7 +7,6 @@ function Navbar({ toggleDarkMode, darkMode, setSidebarOpen }) {
   const navigate = useNavigate();
   const [user, setUser] = useState(JSON.parse(localStorage.getItem('user') || '{}'));
   const userName = user.name || 'Utilisateur Admin';
-  const userEmail = user.email || 'admin@restaurant.com';
   const userInitial = userName.charAt(0).toUpperCase();
   
   const [notifications, setNotifications] = useState([]);
